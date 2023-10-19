@@ -7,7 +7,7 @@ Este projeto tem por finalizade a contrução de um modelo de classificação e 
    
    Faça o clone do projeto e acesse o diretório raiz:
    ```
-   git clone https://xxxx.com
+   git clone https://github.com/rafaelathilla/predict-iris.git
    ```
    Crie o ambiente virtual Python (Versão utilizada é a 3.8):
    ```
@@ -20,7 +20,7 @@ Este projeto tem por finalizade a contrução de um modelo de classificação e 
    ```
    Instação das bibliotecas necessárias:
    ```
-   pip install -r requirements
+   pip install -r requirements.txt
    ```
    Para iniciar a API:
    ```
