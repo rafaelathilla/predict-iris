@@ -31,7 +31,7 @@ Este projeto tem por finalizade a contrução de um modelo de classificação e 
    
    Uma imagem com o projeto já foi disponibilizada em um repositório publico, o container pode ser iniciado da seguinte forma:
    ```
-   docker run -d -p 8001:8001 rafaelathilla/ap-predict-iris
+   docker run -d -p 8001:8001 rafaelathilla/iris-predict
    ```
 
 ## Reprodução da Pipeline para Criação, treinamento, avaliação e disponibilização do modelo.
