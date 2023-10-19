@@ -1,5 +1,6 @@
 import pickle
 
+
 class Singleton(type):
     _instances = {}
 
@@ -7,19 +8,26 @@ class Singleton(type):
         if cls not in cls._instances:
             cls._instances[cls] = super(Singleton, cls).__call__(*args, **kwargs)
         return cls._instances[cls]
-    
-
-def load_model_file(pickle_path, default=None):
-    try:
-        with open(pickle_path, 'rb') as pickle_file:
-            return pickle.load(pickle_file)
-    except FileNotFoundError as e:
-        if default:
-            return default
-        else:
-            raise e
 
 
-def save_model_file(obj, pickle_path):
-    with open(pickle_path, 'wb') as pickle_file:
-        pickle.dump(obj, pickle_file)
+class Util:
+    models = {}
+
+    def load_model_file(self, file_path, default=None):
+        try:
+            if file_path not in self.models.keys():
+                with open(file_path, "rb") as pickle_file:
+                    model = pickle.load(pickle_file)
+                    self.models.update({file_path: model})
+                    return model
+            else:
+                return self.models[file_path]
+        except FileNotFoundError as e:
+            if default:
+                return default
+            else:
+                raise e
+
+    def save_model_file(self, obj, file_path):
+        with open(file_path, "wb") as pickle_file:
+            pickle.dump(obj, pickle_file)
