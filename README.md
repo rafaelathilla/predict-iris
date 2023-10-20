@@ -9,14 +9,14 @@ Este projeto tem por finalizade a contrução de um modelo de classificação e 
    ```
    git clone https://github.com/rafaelathilla/predict-iris.git
    ```
-   Crie o ambiente virtual Python (Versão utilizada é a 3.8):
+   Crie o ambiente virtual Python (Versão utilizada é a 3.10):
    ```
-   python3.8 -m venv env
+   python3.10 -m venv env
    ```
    Criação o ambiente virtual:
    ```
    Windows:  .\env\Scripts\activate
-   Linux:    source /env/bin/activate  
+   Linux:    source env/bin/activate  
    ```
    Instação das bibliotecas necessárias:
    ```
@@ -33,6 +33,10 @@ Este projeto tem por finalizade a contrução de um modelo de classificação e 
    ```
    docker run -d -p 8001:8001 rafaelathilla/iris-predict
    ```
+
+   Após a execução subir o serviço, a API será disponibilizada no seguinte endereço *http://localhost:8001/docs*.
+
+   Ao acessar o endereço uma página com a documentação da API é apresentada no modelo Swagger/OpenAPI, onde é possível testar os serviços de maneira prática.  :)
 
 ## Reprodução da Pipeline para Criação, treinamento, avaliação e disponibilização do modelo.
 
