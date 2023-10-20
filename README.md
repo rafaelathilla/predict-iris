@@ -36,7 +36,7 @@ Este projeto tem por finalizade a contrução de um modelo de classificação e 
 
    Após a execução subir o serviço, a API será disponibilizada no seguinte endereço *http://localhost:8001/docs*.
 
-   Ao acessar o endereço uma página com a documentação da API é apresentada no modelo Swagger/OpenAPI, onde é possível testar os serviços de maneira prática.  :)
+   Ao acessar o endereço uma página com a documentação da API é apresentada no modelo Swagger/OpenAPI, onde é possível testar os serviços de maneira prática. :)
 
 ## Reprodução da Pipeline para Criação, treinamento, avaliação e disponibilização do modelo.
 
